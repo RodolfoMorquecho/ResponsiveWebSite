@@ -1,0 +1,67 @@
+#menu-bar {
+    display: none;  /*Quitamos visualmente el recuadro del input */ 
+}
+
+header label {
+    float: right;  /*Posicionaremos hacia la derecha nuestro boton "menu" */
+    font-size: 28px;  /*Agrandamos el icono */
+    margin: 6px 0;  /*Lo centramos */
+    cursor: pointer;  /*Cambia el cursor cuando pasa sobre el boton menu */
+}
+
+.menu {
+    position: absolute;  /*Posicionando desde la esquina superior izquierda el menu */
+    top: 50px;  /*Se posicionara 50px abajo para evitar que se distorcione con el logo y titulo de la página */
+    left: 0;
+    width: 100%;
+    height: 100vh;  /*Para ocupar siempre el 100% de el alto de la ventana  vh = viewport height */
+    background: rgba(51, 51, 51, .9);
+    transition: all 0.5s;  /*Para ver como se desplaza el menu en medio segundo*/
+    transform: translateX(-100%);  /*Transladamos todo el menu -100% en el eje X, por lo que desaparece */
+}
+
+.menu a {
+    display: block;  /*Cada apartado va en una linea, bloqueando cualquier texto y mandandolo hacia abajo */
+    color: #fff;
+    height: 50px;
+    text-decoration: none;  /*Quitamos el subrayado a el nombre de los apartados o secciones */
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.menu a:hover {
+    background: rgba(255, 255, 255, 0.2);  /*hover nos ayuda a mostrar un color preseleccionado cada que pasamos el cursor sobre un apartado */
+}
+
+
+/*Para que haga la funcion de mostrarse y esconderse el menu al hacer click sobre el boton */
+/*El simbolo "~" se hace con alt + 126 */
+
+ /*Cuando tenga el input activado(checked) al hacer click sobre el icono, con la virgulilla nos va a seleccionar el menu*/
+#menu-bar:checked ~ .menu { 
+    transform: translateX(0%);  /*Transladamos todo el menu al 0% en el eje X, por lo que aparece o se muestra */
+}
+
+
+/*Convirtiendo "RESPONSIVE" el menu a partir de 1024px ya que es el maximo de una tableta y lo tomaremos como minimo para escritorio de pc */
+
+@media (min-width:1024px) {
+    .menu {
+        position: static;  /*Hacemos que el menu deje de estar posicionado absolutamente */
+        width: auto;
+        height: auto;  /*Evitamos que aparezca el background del menu hasta abajo de la página*/
+        transform: translateX(0%);  /*Al pasar los 1024px el menu regresa a una version "normal" donde no es necesario el boton de "menu" */
+        float: right;  /*Posicionamos el menu en la parte derecha */
+        display: flex;  /*Ponemos todos los apartados del menu en la misma linea del primer elemento(Inicio) para que luzca como un navegador*/
+    }
+
+    /*Quitar el borde inferior blanco de la barra de menu */
+    .menu a {
+        border: none;
+    }
+
+    /*Quitar el boton de "meun" ya que para la version de escritorio no es necesario */
+    header label {
+        display: none;
+    }
+}

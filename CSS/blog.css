@@ -1,0 +1,22 @@
+/*Centramos los textos de nuestra seccion "blog" */
+#blog h3, h4{
+    text-align: center;
+}
+
+#blog .contenedor {
+    display: flex;  /*Ponemos en la misma linea horizontal todos nuestros articulos */
+    justify-content: center;
+    flex-wrap: wrap;  /*En caso de que no quepan los articulos en la misma linea, pasa a la siguiente linea */
+}
+
+#blog article {
+    margin: 15px;  /*Separacion de 15px entre cada articulo */
+    margin-bottom: 30px;
+}
+
+#blog img {
+    width: 100%;
+    height: 100%;
+    max-width: 340px;  /*El ancho de las imagenes tendra 280px como limite */
+    max-height: 250px;
+}

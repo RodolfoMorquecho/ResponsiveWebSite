@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Pets</title>
+    <link rel="stylesheet" href="CSS/fontello.css">  <!--Referenciamos los estilos de los iconos-->
+    <link rel="stylesheet" href="CSS/estilos.css">  <!--Referenciamos los estilos de la página-->
+</head>
+<body>
+    <header>
+        <div class="contenedor">  <!--Sección superior de la página-->
+            <h1 class="icon-guidedog">My Pets</h1>  <!--Icono de Perros || Titulo principal de la página-->
+            <input type="checkbox" id="menu-bar">  <!--Boton del menu nos servira para mostrarlo y esconderlo-->
+            <label class="icon-menu" for="menu-bar"></label>  <!--Icono para boton de menu !! label:al preionar el icono nos activara el menu-->
+
+            <nav class="menu">  <!--Menu de página-->
+                <a href="#">Inicio</a>
+                <a href="#info">Mascotas</a>
+                <a href="#bienvenidos">Blog</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <!--Todo dentro de main sera el contenido principal de la página-->
+    <main>
+        <!--Parte UNO-->
+        <section id="banner">
+            <img src="img/banner.jpg" alt="Perro beagle en parque">
+            <div class="contenedor">
+                <h2>Mascotas y niños felices</h2>
+                <p>¿Cuál es la la mejor mascota para usted?</p>
+                <a href="#">Leer más</a>
+            </div>
+        </section>
+
+        <!--Parte DOS-->
+        <section id="bienvenidos">
+            <div class="contenedor">
+                <h2>BIENVENIDOS A NUESTRO CLUB</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima excepturi vel autem quidem officia quia similique,
+                     ab, alias magni et aut maxime, quasi error? Commodi et vero voluptates enim hic?</p>
+            </div>
+        </section>
+
+        <!--Parte TRES-->
+        <section id="blog">
+            <h3>Lo último de nuestro blog</h3>
+            <div class="contenedor">  <!--Dentro tendra 3 articulos con imagenes-->
+                <article>
+                    <img src="img/pet-blog2.jpg" alt="Mujer cargando un perro sonriente">
+                    <h4>Los animales necesitan cariño</h4>
+                </article>
+                <article>
+                    <img src="img/pet-blog1.jpg" alt="Soldado acariciando a un perro negro">
+                    <h4>Escoge tu mascota perfecta</h4>
+                </article>
+                <article>
+                    <img src="img/pet-blog3.jpg" alt="Mujer paseando a cinco perros">
+                    <h4>Camina con tu mascota</h4>
+                </article>
+            </div>
+        </section>
+
+        <!--Parte CUATRO-->
+        <section id="info">
+            <h3>Para muchos de nosotros las mascotas no son simples compañeros, son miembros de la familia.</h3>
+            <div class="contenedor">
+                <div class="info-pet">
+                    <img src="img/pet1.jpg" alt="Loro azul, naranja y verde">
+                    <h4>Max</h4>
+                </div>
+                <div class="info-pet">
+                    <img src="img/pet2.jpg" alt="Conejo con lentes">
+                    <h4>Anna</h4>
+                </div>
+                <div class="info-pet">
+                    <img src="img/pet3.jpg" alt="Perro pug">
+                    <h4>Tom</h4>
+                </div>
+                <div class="info-pet">
+                    <img src="img/pet4.jpg" alt="Cordero blanco con camisa azul">
+                    <h4>Sam</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Parte CINCO-->
+    <footer>
+        <div class="contenedor">
+            <p class="copy">My pets &copy; 2022</p>
+            <!--Los estilos del footer los haremos en la hoja de los estilos generales-->
+            <div class="sociales" id="contacto">  <!--Seccion de Redes sociales representadas con iconos-->
+                <a class="icon-facebook-squared" href="#"></a>
+                <a class="icon-twitter-squared" href="#"></a>
+                <a class="icon-github" href="https://github.com/RodolfoMorquecho"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

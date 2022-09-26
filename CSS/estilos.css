@@ -1,0 +1,110 @@
+/*Desde google fonts seleccionamos el tipo de fuente y pegamos aquí lo que aparece en "@input" */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url(menu.css);  /*Importaremos la hoja de estilos de nuestro menu aquí */
+@import url(banner.css);  /*Importaremos la hoja de estilos de nuestro banner aquí */
+@import url(blog.css);  /*Importamos la hoja de estilos de le seccion blog */
+@import url(info.css);  /*Importamos la hoja de estilos de la seccion info */
+
+
+/*Resetearemos los margenes del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Fuente: Desde google fonts copiamos y pegamos aquí lo que aparece en "<link>" */
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background: #333;
+    color: #fff;
+    
+    /*Mantiene el menu posicionado siempre en la parte superior  */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;  /*Mantenerse siempre por delante de los otros elementos */
+}
+
+.contenedor {
+    width: 98%;
+    margin: auto;  /*Nos ayuda a mantener alineado verticalmente cuando hagamos nuestro sitio responsive */
+}
+
+h1 {
+    float: left;  /*Posicionaremos hacia la izquierda nuestro titulo y lo que esta debajo se recorrera a lado del mismo */
+}
+
+
+header .contenedor {
+    display: table;  /*Limpiamos los float para que los limites de cada elemento no se muestren como separados y se vean unidos */
+}
+
+/*Ya que hay varios section, les daremos esta configuracion */
+section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+
+/*ESTILOS DE "bienvenidos" */
+
+#bienvenidos {
+    text-align: center;
+}
+
+
+/* ESTILOS DEL FOOTER*/
+
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;  /*Para no tener pegados nuestros iconos de sociales al limite de la página */
+}
+
+.copy {
+    font-size: 20px;
+}
+
+.sociales {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.sociales a {
+    color: #333;
+    text-decoration: none;
+}
+
+.sociales a:hover {
+    font-size: 30px;
+}
+
+
+/* ------------------>  Haciendo "RESPONSIVE" el sitio web  <----------------- */
+
+@media (min-width:1024px) {
+    .contenedor {          /*Para la versión movil el width esta en 98% */
+        width: 1000px;  /*Para la versión de escritorio esta en 1000px y se aplicara a todos los div "contenedor" de la página */
+    }
+}
+
+/* ----------> Footer RESPONSIVE <---------- */
+
+/* A partir de la medida de tablet vamos poner el "copy" y "sociales" en la misma linea pero cada uno en un extremo */
+@media (min-width:768px) {
+    .sociales {
+        width: auto;  /*En la versión movil copy y sociales estan uno debajo del otro, aqui los pondremos en la misma linea*/
+    }
+
+    footer .contenedor {
+        justify-content: space-between;  /*Posicionamos en un extremo el copy y en la otra orilla los sociales */
+    }
+}
