@@ -12,5 +12,6 @@ Sitio web responsivo sobre mascotas, haciendo únicamente uso de HTML y CSS.
 
 - La sección de blog tiene un titulo con una breve descripción y tres articulos, los cuales solo seran visibles uno a la vez por lo que debemos desplazarnos hacia abajo.
 
-![movil1](https://user-images.githubusercontent.com/99112892/192404470-5af666a2-bcd2-49f8-9eea-2c72e9147b3e.png)  ![movil2](https://user-images.githubusercontent.com/99112892/192404482-05efa93b-a65d-409f-86ac-25685ac3c654.png)
+![movil1](https://user-images.githubusercontent.com/99112892/192404470-5af666a2-bcd2-49f8-9eea-2c72e9147b3e.png)  ![movil2](https://user-images.githubusercontent.com/99112892/192404482-05efa93b-a65d-409f-86ac-25685ac3c654.png)  ![movilS](https://user-images.githubusercontent.com/99112892/192404901-ddd99b36-8039-4113-ab67-f423eee2a2db.png)
+
 
