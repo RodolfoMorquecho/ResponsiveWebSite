@@ -51,7 +51,7 @@ Sitio web responsivo sobre mascotas, haciendo únicamente uso de HTML y CSS.
 ### Escritorio(min-width1024×900+)
 
 - El menú aparece en la barra superior estatica, por ende, desaparece el botón de las tres lineas.
-- 
+
 - El alto del banner se reduce mas, por lo tanto, una parte de la imagen ya no se observa.
 
 - En blog, se pueden ver todas las imagenes sobre la misma linea.
