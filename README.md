@@ -1,7 +1,8 @@
 # ResponsiveWebSite
 Sitio web responsivo sobre mascotas, haciendo únicamente uso de HTML y CSS.
 
-                                                                                       #### WebSite: [MyPets](https://rodolfomorquecho.github.io/ResponsiveWebSite/)
+#### WebSite: [MyPets](https://rodolfomorquecho.github.io/ResponsiveWebSite/)
+
 
 
 ## Adaptación del sitio a las distintas medidas "responsive"
@@ -28,6 +29,7 @@ Sitio web responsivo sobre mascotas, haciendo únicamente uso de HTML y CSS.
 ![movil5](https://user-images.githubusercontent.com/99112892/192409715-7dc2e7da-ba47-4d02-809b-f87a2e07206e.png)
 
 
+
 ### Tableta(768x1024)
 
 - El alto del banner se reduce, por lo tanto, una parte de la imagen ya no se observa.
@@ -43,6 +45,7 @@ Sitio web responsivo sobre mascotas, haciendo únicamente uso de HTML y CSS.
 - En footer las redes sociales y el copy se alinean en la misma columna pero se ponen uno en cada esquina.
 
 ![tablet3](https://user-images.githubusercontent.com/99112892/192437962-ac1c0b57-1397-48e1-b499-48ad6cb4e42f.png)
+
 
 
 ### Escritorio(min-width1024×900+)
