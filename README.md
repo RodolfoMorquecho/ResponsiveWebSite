@@ -14,7 +14,5 @@ Sitio web responsivo sobre mascotas, haciendo únicamente uso de HTML y CSS.
 
 ![medidasMov](https://user-images.githubusercontent.com/99112892/192405802-c9edc131-d1e4-48d6-adaa-7edd61aa6b60.png)
 
-![movil1](https://user-images.githubusercontent.com/99112892/192405821-212b97f5-d20a-4551-8def-fe3fb52d6230.png) ![movil2](https://user-images.githubusercontent.com/99112892/192405853-40fa27aa-a254-4d67-95c8-b8a44197c943.png)
-
-
+![movil1](https://user-images.githubusercontent.com/99112892/192405821-212b97f5-d20a-4551-8def-fe3fb52d6230.png) ![movil2](https://user-images.githubusercontent.com/99112892/192406193-ce650d5e-1e45-4d5f-9b87-3112682bcae7.png)
 
